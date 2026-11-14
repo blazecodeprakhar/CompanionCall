@@ -445,6 +445,20 @@ document.addEventListener('DOMContentLoaded', () => {
       // Clean, well-structured subject line so the email stands out clearly in inbox
       formData.set('subject', `[CompanionCall Booking] ${name} | ${dateVal} (${timeVal})`);
       formData.set('from_name', 'CompanionCall Alerts');
+      formData.set('access_key', '4b9bf8e4-19bd-4585-b0ca-bfc016f0e1c5');
+
+      const noteVal = document.getElementById('note').value.trim() || 'None';
+      const callModeVal = form.querySelector('input[name="call_mode"]:checked')?.value || 'Normal Phone Call';
+
+      const emailSummary = `
+Name / Nickname: ${name}
+Phone Number: ${phone}
+Scheduled Date: ${dateVal}
+Time Slot: ${timeVal}
+Call Type: ${callModeVal}
+Discussion Topic: ${noteVal}
+      `.trim();
+      formData.set('message', emailSummary);
 
       const accessKey = formData.get('access_key');
 
