@@ -15,12 +15,6 @@
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large">
   
-  <!-- Canonical & Alternate Hreflang URLs -->
-  <link rel="canonical" href="https://companioncall.org/">
-  <link rel="alternate" hreflang="x-default" href="https://companioncall.org/">
-  <link rel="alternate" hreflang="en" href="https://companioncall.org/">
-  <link rel="alternate" hreflang="hi" href="https://companioncall.org/?lang=hi">
-
   <!-- Audience, Age & Geo Target -->
   <meta name="rating" content="General">
   <meta name="target" content="College Students, School Students, Young Adults, 18+">
@@ -35,11 +29,9 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CompanionCall">
-  <meta property="og:url" content="https://companioncall.org/">
   <meta property="og:title" content="CompanionCall | Free Friendly Listener for College & School Students (18+)">
   <meta property="og:description" content="Feeling lonely, overwhelmed by exams, or just want someone friendly to talk with? Schedule a 100% free friendly companion call. Safe, confidential, and judgment-free.">
-  <meta property="og:image" content="https://companioncall.org/og-image.png">
-  <meta property="og:image:secure_url" content="https://companioncall.org/og-image.png">
+  <meta property="og:image" content="og-image.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -49,10 +41,9 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://companioncall.org/">
   <meta name="twitter:title" content="CompanionCall | Free Friendly Listener for Students (18+)">
   <meta name="twitter:description" content="Talk to a friendly companion for free. Designed for college students, school students, and youth.">
-  <meta name="twitter:image" content="https://companioncall.org/og-image.png">
+  <meta name="twitter:image" content="og-image.png">
   <meta name="twitter:image:alt" content="CompanionCall Social Banner">
 
   <!-- Mobile Theme & Web App -->
@@ -80,22 +71,20 @@
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://companioncall.org/#website",
-        "url": "https://companioncall.org/",
+        "@id": "#website",
         "name": "CompanionCall",
         "description": "Free, confidential peer friendly listener service for college students, school students, and young adults (18+).",
         "inLanguage": ["en", "hi"]
       },
       {
         "@type": "Service",
-        "@id": "https://companioncall.org/#service",
+        "@id": "#service",
         "name": "Free Friendly Companion Call",
         "serviceType": "Peer-to-Peer Friendly Listening and Companionship",
         "description": "A volunteer-based, 100% free listening call for college students, school students, and youth feeling lonely or stressed. Non-judgmental and confidential conversation companion.",
         "provider": {
           "@type": "Organization",
-          "name": "CompanionCall",
-          "url": "https://companioncall.org/"
+          "name": "CompanionCall"
         },
         "offers": {
           "@type": "Offer",
@@ -114,7 +103,7 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://companioncall.org/#faq",
+        "@id": "#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -159,10 +148,10 @@
   <!-- Minimal Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="https://companioncall.org/" class="logo" aria-label="CompanionCall Homepage">
+      <div class="logo">
         <i class="fa-solid fa-heart" aria-hidden="true"></i>
         <span>Companion<strong>Call</strong></span>
-      </a>
+      </div>
 
       <div class="header-right">
         <div class="header-badges">

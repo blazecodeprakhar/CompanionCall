@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://companioncall.org/sitemap.xml
+Sitemap: https://companioncall.vercel.app/sitemap.xml
